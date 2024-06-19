@@ -14,6 +14,13 @@ public class CartPage {
     @FindBy(className = "cart_item")
     private List<WebElement> cartItems;
 
+    @FindBy(id = "checkout")
+    WebElement checkoutButton;
+
+    public WebElement getCheckoutButton() {
+        return checkoutButton;
+    }
+
     public List<WebElement> getCartItems() {
         return cartItems;
     }
